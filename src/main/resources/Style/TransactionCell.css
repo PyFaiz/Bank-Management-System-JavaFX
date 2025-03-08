@@ -1,0 +1,37 @@
+.cell_container {
+    -fx-background-color: #FFFFFF;
+    -fx-background-radius: 10;
+    -fx-effect: dropshadow(two-pass-box,#DDDDDD,5,0,0,7);
+}
+
+.transa_icon_container{
+    -fx-background-color: #FFFFFF;
+    -fx-alignment: center;
+    -fx-spacing: 5;
+}
+
+.transa_date_lbl{
+    -fx-text-fill: #AAAAAA;
+    -fx-font-weight: 700;
+}
+
+.transa_pAddress_lbl {
+       -fx-text-fill: #000000;
+       -fx-font-weight: 700;
+}
+
+.cell_container Line {
+    -fx-stroke: #EEEEEE;
+}
+
+.transa_amount_lbl{
+    -fx-background-color:linear-gradient(from 25% 25% to 100% 100%,#ff9cc8, #0272f7);
+    -fx-background-radius: 2;
+    -fx-text-fill:#FFFFFF;
+    -fx-font-weight: 700;
+    -fx-padding: 5;
+}
+
+.transa_amount_lbl FontIcon {
+    -fx-fill: #FFFFFF;
+}

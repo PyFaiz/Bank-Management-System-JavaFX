@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+
+<AnchorPane prefHeight="60.0" prefWidth="550.0" styleClass="cell_container" stylesheets="@../Style/TransactionCell.css"
+            xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1"
+            >
+   <VBox prefHeight="50.0" prefWidth="50.0" styleClass="transa_icon_container" AnchorPane.bottomAnchor="5.0"
+         AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="5.0">
+      <FontIcon fx:id="incoming_icon" iconLiteral="fas-long-arrow-alt-right" iconSize="17"/>
+      <FontIcon fx:id="outgoing_icon" iconLiteral="fas-long-arrow-alt-left" iconSize="17" text=""/>
+   </VBox>
+   <Label fx:id="transf_date_lbl" layoutX="65.0" layoutY="21.0" styleClass="transa_date_lbl" text="21-7-2024"
+          AnchorPane.leftAnchor="100.0"/>
+   <Label fx:id="sender_lbl" layoutX="201.0" layoutY="21.0" styleClass="transa_pAddress_lbl" text="Retard"
+          AnchorPane.leftAnchor="200.0"/>
+   <Line endX="265.0" endY="-0.5999937057495117" layoutX="15.0" layoutY="21.0" startX="265.0" startY="18.10000991821289"
+         AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="22.0"/>
+   <Label fx:id="reciever_lbl" layoutX="359.0" layoutY="21.0" styleClass="transa_pAddress_lbl" text="Retard2"
+          AnchorPane.leftAnchor="359.0" AnchorPane.topAnchor="23.0"/>
+   <Label fx:id="amount_lbl" layoutX="487.0" layoutY="21.0" styleClass="transa_amount_lbl" text="2000"
+          AnchorPane.rightAnchor="14" AnchorPane.topAnchor="17.0">
+      <graphic>
+         <FontIcon iconLiteral="fas-rupee-sign"/>
+      </graphic>
+   </Label>
+</AnchorPane>
